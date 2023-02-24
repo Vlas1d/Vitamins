@@ -1,0 +1,262 @@
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 110px;
+  padding: 30px 30px 30px 35px;
+  z-index: 999;
+}
+
+.header__view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  height: 50px;
+}
+
+.header__end a:not(.button) {
+  margin-top: 8px;
+}
+
+.header__end > *:not(:first-child) {
+  margin-left: 37px;
+}
+
+.header__hide-menu {
+  display: none;
+}
+
+@font-face {
+  font-family: "Effra";
+  src: local("Effra"), url("../fonts/Effra.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Effra";
+  src: local("Effra"), url("../fonts/Effra-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Effra";
+  src: local("Effra"), url("../fonts/Effra-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.svg-logo {
+  width: 42px;
+  height: 50px;
+}
+
+.svg-bag {
+  width: 22px;
+  height: 26px;
+}
+
+.svg-person {
+  width: 26px;
+  height: 26px;
+}
+
+.svg-healthy1 {
+  width: 103px;
+  height: 84px;
+}
+
+.svg-healthy2 {
+  width: 87px;
+  height: 97px;
+}
+
+.svg-healthy3 {
+  width: 84px;
+  height: 107px;
+}
+
+.button {
+  font-family: "Effra";
+  font-style: normal;
+  font-weight: 700;
+  color: #FFFFFF;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.button_orange {
+  background: #FF7D4E;
+}
+
+.button_orange:hover {
+  -webkit-box-shadow: 0px 0px 15px #FF7D4E;
+          box-shadow: 0px 0px 15px #FF7D4E;
+}
+
+.button_purple {
+  background: #6E5DDC;
+}
+
+.button_purple:hover {
+  -webkit-box-shadow: 0px 0px 15px #6E5DDC;
+          box-shadow: 0px 0px 15px #6E5DDC;
+}
+
+.button__small {
+  font-size: 16px;
+  line-height: 19px;
+  height: 50px;
+  padding: 0px 30px;
+  border-radius: 25px;
+}
+
+.button__middle {
+  font-size: 20px;
+  line-height: 163.42%;
+  height: 65px;
+  padding: 0px 30px;
+  border-radius: 33px;
+}
+
+.button__big {
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 163.42%;
+  height: 74px;
+  padding: 0px 63px;
+  border-radius: 37px;
+}
+
+.button-link {
+  font-family: "Effra";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.button-link_orange {
+  color: #FF7D4E;
+}
+
+.decor__circle {
+  border-radius: 50%;
+}
+
+.decor__circle_purple {
+  background: #6E5DDC;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+}
+
+img {
+  width: initial;
+  height: initial;
+}
+
+html,
+body {
+  position: relative;
+  width: 100vw;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 163%;
+  color: #000;
+  background: #FFF;
+}
+
+p {
+  font-size: 20px;
+  line-height: 163.42%;
+}
+
+main {
+  position: relative;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Effra";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 68px;
+}
+
+h5 {
+  font-family: "Effra";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+button {
+  background: transparent;
+  border: transparent;
+}
+
+.container {
+  max-width: 1426px;
+  width: 100%;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  margin: 0 auto;
+}
