@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"Головна сторінка",
+"thisStyle":"css/main.min.css"
+})
+
+<body>
+    @@include('html/header.html', {})
+    <main>
+        <section class="main-window">
+            <div class="main-window__container main-content container">
+                <div class="main-content__text">
+                    <h1>Find out what <span>vitamins</span> your body needs right now.</h1>
+                    <p>Answer a few simple questions and automatically<br>
+                        get a personalazed list of vitamins in minutes</p>
+                    <div class="main-content__links">
+                        <a class="button button__big button_purple">Take the quiz</a>
+                        <a class="button-link button-link_orange">Go to the shop ></a>
+                    </div>
+                </div>
+                <div class="main-content__image">
+                    <img loading="lazy" src="@img/vitamins.png" alt="vitamins">
+                </div>
+            </div>
+            <div class="main-window__bg-right">
+                <div class="decor__circle decor__circle_purple">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="healthy">
+            <div class="healthy__container healthy-content container">
+                <div class="healthy-content__text">
+                    <h1>Healthy doesn’t have to be hard. We make it easy.</h1>
+                </div>
+                <div class="healthy-content__icons">
+                    <div>
+                        <div class="healthy-content__icon"><img class="svg-healthy1" src="@img/icons/healthy1.svg"
+                                alt="heathy"></div>
+                        <h5>Healthy doesn’t have to be hard. We make it easy.</h5>
+                    </div>
+                    <div>
+                        <div class="healthy-content__icon"><img class="svg-healthy2" src="@img/icons/healthy2.svg"
+                                alt="heathy"></div>
+                        <h5>Healthy doesn’t have to be hard. We make it easy.</h5>
+                    </div>
+                    <div>
+                        <div class="healthy-content__icon"><img class="svg-healthy3" src="@img/icons/healthy3.svg"
+                                alt="heathy"></div>
+                        <h5>Healthy doesn’t have to be hard. We make it easy.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="healthy__bg-left">
+                <div class="healthy__bg-left_img">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="vitamins-img">
+
+        </section>
+    </main>
+    @@include('html/footer.html', {})
+</body>
+
+</html>
