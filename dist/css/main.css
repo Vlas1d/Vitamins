@@ -29,7 +29,7 @@
 
 .main-window__bg-right .decor__circle {
   width: 523px;
-  height: 523px;
+  aspect-ratio: 1/1;
 }
 
 .main-content {
@@ -60,7 +60,7 @@
 
 .main-content__image {
   position: absolute;
-  top: 129px;
+  bottom: -27px;
   right: -187px;
 }
 
@@ -163,6 +163,337 @@
 
 .healthy-content__icons > *:not(:last-child) {
   margin-bottom: 108px;
+}
+
+.vitamins-img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(0, -101px);
+      -ms-transform: translate(0, -101px);
+          transform: translate(0, -101px);
+  z-index: 2;
+}
+
+.vitamins-img picture:first-child {
+  -webkit-transform: translate(0, -177px);
+      -ms-transform: translate(0, -177px);
+          transform: translate(0, -177px);
+  z-index: 2;
+  max-width: 530px;
+  width: 100%;
+}
+
+.vitamins-img picture:first-child:hover {
+  -webkit-transform: scale(1.1) translate(0, -177px);
+      -ms-transform: scale(1.1) translate(0, -177px);
+          transform: scale(1.1) translate(0, -177px);
+  z-index: 3;
+}
+
+.vitamins-img picture:first-child img {
+  width: 100%;
+  -webkit-box-align: 530/450;
+      -ms-flex-align: 530/450;
+          align-items: 530/450;
+}
+
+.vitamins-img picture:last-child {
+  -webkit-transform: translate(-54px, 0);
+      -ms-transform: translate(-54px, 0);
+          transform: translate(-54px, 0);
+  z-index: 1;
+  max-width: 801px;
+  width: 100%;
+}
+
+.vitamins-img picture:last-child:hover {
+  -webkit-transform: scale(1.1) translate(-54px, 0);
+      -ms-transform: scale(1.1) translate(-54px, 0);
+          transform: scale(1.1) translate(-54px, 0);
+  z-index: 3;
+}
+
+.vitamins-img picture:last-child img {
+  width: 100%;
+  aspect-ratio: 801/470;
+}
+
+.vitamins-img picture {
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+.yourself {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 41px 0px 150px;
+  max-width: 919px;
+  width: 100%;
+  text-align: center;
+}
+
+.yourself__pic {
+  margin-bottom: 49px;
+}
+
+.yourself__title {
+  margin-bottom: 29px;
+}
+
+.yourself .button {
+  margin-top: 53px;
+}
+
+.choose-prod {
+  position: relative;
+  height: 825px;
+}
+
+.choose-prod__content {
+  position: relative;
+  z-index: 2;
+}
+
+.choose-prod__bg-right {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50vw;
+  height: 100%;
+  background: #E99478;
+  z-index: 1;
+}
+
+.choose-prod__bg-right picture {
+  position: absolute;
+  bottom: -38.5%;
+  right: 50%;
+  -webkit-transform: translate(55.8%, 0);
+      -ms-transform: translate(55.8%, 0);
+          transform: translate(55.8%, 0);
+}
+
+.choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.choose__slider {
+  max-width: 830px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: 0px;
+  margin-top: 151px;
+}
+
+.choose__slide {
+  width: 400px !important;
+  height: 494px;
+  border-radius: 16px;
+  padding: 61px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Open Sans";
+  color: #FFFFFF;
+}
+
+.choose__slide picture {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 44px;
+}
+
+.choose__slide span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 13px;
+}
+
+.choose__slide p {
+  font-size: 16px;
+  line-height: 163.42%;
+  margin-top: 18px;
+}
+
+.choose__slide_green {
+  background: #89D4A7;
+}
+
+.choose__slide_purple {
+  background: #9C91E0;
+}
+
+.choose__text {
+  max-width: 444px;
+  width: 100%;
+  margin-left: auto;
+  color: #FFF;
+  margin-top: 234px;
+}
+
+.choose__text h1 {
+  margin-bottom: 30px;
+}
+
+.choose__text a {
+  display: block;
+  margin: 34px 0px 0px 5px;
+}
+
+.customer {
+  padding: 50px 0px;
+}
+
+.customer > *:not(img) {
+  max-width: 650px;
+  width: 100%;
+}
+
+.customer img {
+  margin-bottom: 31px;
+}
+
+.customer h1 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1300px) {
+  .main-window__bg-right .decor__circle {
+    display: none;
+  }
+
+  .main-window__bg-right {
+    top: 50%;
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+  .main-content__image {
+    position: relative;
+    top: 0px;
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+        -ms-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+  }
+
+  .main-content__image picture {
+    max-width: 1087px;
+    width: 100%;
+  }
+
+  .main-content__image picture img {
+    width: 100%;
+    aspect-ratio: 1087/850;
+  }
+
+  .healthy__bg-left {
+    width: 100vw;
+    height: 198px;
+  }
+
+  .healthy-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .healthy-content__text {
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+
+  .vitamins-img {
+    -webkit-transform: translate(0, 0px);
+        -ms-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+
+  .vitamins-img picture:first-child {
+    -webkit-transform: translate(0, 0px);
+        -ms-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+
+  .vitamins-img picture:last-child {
+    -webkit-transform: translate(0px, 0);
+        -ms-transform: translate(0px, 0);
+            transform: translate(0px, 0);
+  }
+
+  .choose-prod__bg-right {
+    width: 100vw;
+    height: 369px;
+  }
+
+  .choose-prod__bg-right > * {
+    display: none;
+  }
+
+  .choose {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .choose__slider {
+    -webkit-box-ordinal-group: 3 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important;
+    margin: 0px !important;
+  }
+
+  .choose__text {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+    margin: 0px !important;
+    text-align: center;
+  }
 }
 
 .webp .healthy__bg-left_img { background: url(../img/healthy_bg.webp) center/cover no-repeat; }

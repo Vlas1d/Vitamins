@@ -4,7 +4,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100%;
+  width: 100vw;
   height: 110px;
   padding: 30px 30px 30px 35px;
   z-index: 999;
@@ -93,6 +93,16 @@
   height: 107px;
 }
 
+.svg-hands {
+  width: 99px;
+  height: 99px;
+}
+
+.svg-dialoge {
+  width: 86px;
+  height: 98px;
+}
+
 .button {
   font-family: "Effra";
   font-style: normal;
@@ -105,6 +115,9 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .button_orange {
@@ -160,6 +173,10 @@
 
 .button-link_orange {
   color: #FF7D4E;
+}
+
+.button-link_white {
+  color: #FFF;
 }
 
 .decor__circle {
@@ -228,6 +245,10 @@ main {
   position: relative;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -248,6 +269,14 @@ h5 {
   line-height: 36px;
 }
 
+h6 {
+  font-family: "Effra";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
 button {
   background: transparent;
   border: transparent;
@@ -259,4 +288,11 @@ button {
   padding-left: 15px !important;
   padding-right: 15px !important;
   margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }

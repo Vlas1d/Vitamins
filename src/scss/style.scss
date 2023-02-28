@@ -49,6 +49,9 @@ p {
 main {
     position: relative;
 }
+body {
+    overflow-x: hidden;
+}
 html {
     overflow-x: hidden;
 }
@@ -58,6 +61,11 @@ h1 {
     font-weight: 500;
     font-size: 56px;
     line-height: 68px;
+
+    @media (max-width: 700px) {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 h2 {
     
@@ -76,7 +84,11 @@ h5 {
     line-height: 36px;
 }
 h6 {
-    
+    font-family: 'Effra';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 button {
