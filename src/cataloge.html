@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"Cataloge",
+"thisStyle":"css/cataloge.min.css"
+})
+
+<body>
+    @@include('html/header.html', {})
+    <main>
+        <section class="cataloge-slider swiper">
+            <div class="cataloge-slider__control">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide cataloge-slider__slide cataloge-slide">
+                    <div class="cataloge-slide__text">
+                        <h2>Don’t know what vitamins your body needs?</h2>
+                        <p>Answer a few simple questions and automatically
+                            get a personalazed list of vitamins in minutes</p>
+                        <a class="button button__middle button_white">Take the quiz</a>
+                    </div>
+                    <div class="cataloge-slide__image">
+                        <img src="@img/vitamins.png" alt="vitamins">
+                    </div>
+                </div>
+                <div class="swiper-slide cataloge-slider__slide cataloge-slide">
+                    <div class="cataloge-slide__text">
+                        <h2>Don’t know what vitamins your body needs?</h2>
+                        <p>Answer a few simple questions and automatically
+                            get a personalazed list of vitamins in minutes</p>
+                        <a class="button button__middle button_white">Take the quiz</a>
+                    </div>
+                    <div class="cataloge-slide__image">
+                        <img src="@img/vitamins.png" alt="vitamins">
+                    </div>
+                </div>
+                <div class="swiper-slide cataloge-slider__slide cataloge-slide">
+                    <div class="cataloge-slide__text">
+                        <h2>Don’t know what vitamins your body needs?</h2>
+                        <p>Answer a few simple questions and automatically
+                            get a personalazed list of vitamins in minutes</p>
+                        <a class="button button__middle button_white">Take the quiz</a>
+                    </div>
+                    <div class="cataloge-slide__image">
+                        <img src="@img/vitamins.png" alt="vitamins">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/footer.html', {})
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html', {
-"title":"Головна сторінка",
+"title":"Main",
 "thisStyle":"css/main.min.css"
 })
 
@@ -16,7 +16,7 @@
                         get a personalazed list of vitamins in minutes</p>
                     <div class="main-content__links">
                         <a class="button button__big button_purple">Take the quiz</a>
-                        <a class="button-link button-link_orange">Go to the shop ></a>
+                        <a href="cataloge.html" class="button-link button-link_orange">Go to the shop ></a>
                     </div>
                 </div>
                 <div class="main-content__image">
@@ -118,6 +118,19 @@
                 </div>
             </div>
         </section>
+
+        @@include('html/customers-reviews.html', {})
+
+        <section class="yourself container">
+            <img loading="lazy" class="svg-hands-heart yourself__pic" src="@img/icons/hands-heart.svg"
+                alt="hands-heart">
+            <h1 class="yourself__title">Ready to get started?</h1>
+            <p>We'll help you create a health plan with vitamins, supplements, and more that help you feel your<br> best
+                today and support you long-term.</p>
+            <a class="button button__big button_purple">Take the quiz</a>
+            <a class="button-link button-link_orange">Go to the shop ></a>
+        </section>
+
     </main>
     @@include('html/footer.html', {})
 </body>

@@ -1,8 +1,11 @@
-@import "modules/header.scss";
+@import "modules/header";
+@import "modules/footer";
 @import "modules/fonts";
 @import "modules/icons";
 @import "modules/buttons";
 @import "modules/decor";
+@import "modules/customers-reviews";
+
 @import "../../node_modules/swiper/swiper-bundle.min.css";
 
 //-----INIT-STYLES--------------------------------
@@ -42,6 +45,9 @@ html, body {
     color: #000;
     background: #FFF;
 }
+main {
+    min-height: calc(100vh - 350px);
+}
 p {
     font-size: 20px;
     line-height: 163.42%; 
@@ -68,7 +74,11 @@ h1 {
     }
 }
 h2 {
-    
+    font-family: 'Effra';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
 }
 h3 {
     

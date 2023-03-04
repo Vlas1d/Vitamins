@@ -240,7 +240,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 41px 0px 150px;
-  max-width: 919px;
+  max-width: 930px;
   width: 100%;
   text-align: center;
 }
@@ -255,6 +255,15 @@
 
 .yourself .button {
   margin-top: 53px;
+}
+
+.yourself .button-link {
+  margin-top: 35px;
+}
+
+.reviews + .yourself {
+  margin-top: 10px;
+  padding-bottom: 102px;
 }
 
 .choose-prod {
@@ -293,11 +302,25 @@
 }
 
 .choose__slider {
-  max-width: 830px;
+  max-width: 835px;
   width: 100%;
   margin-right: auto;
   margin-left: 0px;
   margin-top: 151px;
+}
+
+.choose__slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(255, 255, 255)), color-stop(3%, rgba(255, 255, 255, 0)), color-stop(97%, rgba(255, 255, 255, 0)), to(#E99478));
+  background: -o-linear-gradient(left, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 3%, rgba(255, 255, 255, 0) 97%, #E99478 100%);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 3%, rgba(255, 255, 255, 0) 97%, #E99478 100%);
+  z-index: 2;
 }
 
 .choose__slide {
@@ -362,7 +385,7 @@
 }
 
 .customer {
-  padding: 50px 0px;
+  padding: 50px 0px 30px;
 }
 
 .customer > *:not(img) {

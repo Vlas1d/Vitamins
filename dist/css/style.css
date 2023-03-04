@@ -39,6 +39,99 @@
   display: none;
 }
 
+.footer {
+  background: #FAF8F6;
+}
+
+.footer-info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 350px;
+  padding: 60px 0px 55px;
+}
+
+.footer-info > * {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 80%;
+  margin-top: 55px;
+}
+
+.footer-info > * p {
+  position: absolute;
+  top: -56px;
+  left: 0px;
+  font-family: "Effra";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 250.1%;
+}
+
+.footer-info > * a {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 158%;
+  opacity: 0.75;
+  max-width: 185px;
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.footer-info__logo {
+  margin-top: 10px !important;
+  margin-right: 89px;
+}
+
+.footer-info__shop {
+  margin-right: 110px;
+}
+
+.footer-info__contact {
+  width: 206px;
+}
+
+.footer-info__contact a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-info__contact a img {
+  margin-right: 10px;
+}
+
+.footer-info__copyright {
+  position: absolute;
+  bottom: 90px;
+  left: 15px;
+  height: auto;
+  margin: 0px !important;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  opacity: 0.75;
+}
+
 @font-face {
   font-family: "Effra";
   src: local("Effra"), url("../fonts/Effra.woff") format("woff");
@@ -68,6 +161,11 @@
   height: 50px;
 }
 
+.svg-logo-big {
+  width: 87px;
+  height: 99px;
+}
+
 .svg-bag {
   width: 22px;
   height: 26px;
@@ -76,6 +174,11 @@
 .svg-person {
   width: 26px;
   height: 26px;
+}
+
+.svg-arrow {
+  width: 9px;
+  height: 15px;
 }
 
 .svg-healthy1 {
@@ -98,9 +201,29 @@
   height: 99px;
 }
 
+.svg-hands-heart {
+  width: 97px;
+  height: 90px;
+}
+
 .svg-dialoge {
   width: 86px;
   height: 98px;
+}
+
+.svg-stars {
+  width: 120px;
+  height: 19px;
+}
+
+.svg-customers {
+  width: 48px;
+  height: 48px;
+}
+
+.svg-social {
+  width: 22px;
+  height: 22px;
 }
 
 .button {
@@ -136,6 +259,16 @@
 .button_purple:hover {
   -webkit-box-shadow: 0px 0px 15px #6E5DDC;
           box-shadow: 0px 0px 15px #6E5DDC;
+}
+
+.button_white {
+  color: #000;
+  background: #FFF;
+}
+
+.button_white:hover {
+  -webkit-box-shadow: 0px 0px 15px rgb(154, 154, 154);
+          box-shadow: 0px 0px 15px rgb(154, 154, 154);
 }
 
 .button__small {
@@ -175,8 +308,16 @@
   color: #FF7D4E;
 }
 
+.button-link_orange:hover {
+  border-bottom: 2px solid #FF7D4E;
+}
+
 .button-link_white {
   color: #FFF;
+}
+
+.button-link_white:hover {
+  border-bottom: 2px solid #FFF;
 }
 
 .decor__circle {
@@ -185,6 +326,66 @@
 
 .decor__circle_purple {
   background: #6E5DDC;
+}
+
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0px;
+}
+
+.reviews__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 444px;
+  width: 100%;
+  height: 360px;
+  padding: 41px 31px 29px;
+  background: #FAF8F6;
+  border-radius: 16px;
+}
+
+.reviews__slide h6 {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 20px 0px 15px;
+}
+
+.reviews__slide p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.reviews__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: auto;
+}
+
+.reviews__author img {
+  margin-right: 15px;
+}
+
+.reviews__author span {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 *,
@@ -236,6 +437,10 @@ body {
   background: #FFF;
 }
 
+main {
+  min-height: calc(100vh - 350px);
+}
+
 p {
   font-size: 20px;
   line-height: 163.42%;
@@ -259,6 +464,14 @@ h1 {
   font-weight: 500;
   font-size: 56px;
   line-height: 68px;
+}
+
+h2 {
+  font-family: "Effra";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
 }
 
 h5 {
