@@ -1,0 +1,108 @@
+.quiz {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    & > *:not(.quiz__quest-num) {
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        h1 {
+            max-width: 496px;
+            width: 100%;
+
+            font-size: 64px;
+            line-height: 77px;
+        }
+        a {
+            position: absolute;
+            bottom: 30px;
+            left: 35px;
+
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        color: #fff;
+        background: #8172DD;
+    }
+
+    div:has(input#name) {
+        position: relative;
+    }
+    &__button-next {
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        transform: translate(0px, -50%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 69px;
+        height: 69px;
+        border-radius: 50%;
+
+        color: #fff;
+        background: #FF7D4E;
+        &:active {
+            background: #d65c30;
+        }
+    }
+
+    &__quest-num {
+        position: absolute;
+        top: 37px;
+        right: 35px;
+
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 41px;
+    }
+}
+.input-quiz {
+
+    background: #FAF8F6;
+
+    &__container {
+        max-width: 496px;
+        width: 100%;
+
+        input:focus {
+            outline-color:#8172DD;
+            //background: #000 !important;
+        }
+
+        input#name {
+            width: 100%;
+            height: 105px;
+            border-radius: 16px;
+            padding: 0px 30px;
+
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+
+            background: #fff;
+
+            &::placeholder {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+    }
+}

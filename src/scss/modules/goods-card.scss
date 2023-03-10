@@ -1,0 +1,49 @@
+.goods-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 32px;
+
+    &__card {
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.47);
+    }
+}
+.goods-card {
+    max-width: 325px;
+    min-width: 250px;
+    flex: 1 1 auto;
+    height: 479px;
+    padding: 62px 30px 31px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #FAF8F6;
+    border-radius: 16px;
+
+    picture {
+        margin: 0px auto 44px;
+    }
+
+    &__category {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: #6B5EBB;
+
+        margin-bottom: 8px;
+    }
+
+    &__name {
+        font-family: 'Effra';
+        font-weight: 400;
+    }
+
+    &__price {
+        font-weight: 700;
+        line-height: 27px;
+
+        margin-top: auto;
+    }
+}

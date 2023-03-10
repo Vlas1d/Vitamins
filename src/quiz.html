@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"Quiz",
+"thisStyle":"css/quiz.min.css"
+})
+
+<body>
+    @@include('html/header.html', {
+    "logo":"logo-white.svg",
+    "endVisible":"hide"
+    })
+    <main>
+        <section class="quiz">
+            <div class="quiz__title">
+                <h1>What’s your first name?</h1>
+                <a href="index.html">
+                    <img class="svg-arrow" style="transform: rotate(180deg);" src='@img/icons/arrow1-white.svg'
+                        alt="arrow">
+                    Back
+                </a>
+            </div>
+            <div class="quiz__input input-quiz">
+                <div class="input-quiz__container">
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="First Name">
+                        <button class="quiz__button-next">
+                            <img class="svg-arrow" src='@img/icons/arrow1-white.svg' alt="arrow">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz__quest-num">
+                1/9
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -6,7 +6,9 @@
 })
 
 <body>
-    @@include('html/header.html', {})
+    @@include('html/header.html', {
+    "logo":"logo.svg"
+    })
     <main>
         <section class="main-window">
             <div class="main-window__container main-content container">
@@ -15,7 +17,7 @@
                     <p>Answer a few simple questions and automatically<br>
                         get a personalazed list of vitamins in minutes</p>
                     <div class="main-content__links">
-                        <a class="button button__big button_purple">Take the quiz</a>
+                        <a href="quiz.html" class="button button__big button_purple">Take the quiz</a>
                         <a href="cataloge.html" class="button-link button-link_orange">Go to the shop ></a>
                     </div>
                 </div>
@@ -70,7 +72,7 @@
             <h1 class="yourself__title">Tell us a little about yourself.<br>We’re good listeners.</h1>
             <p>We'll help you create a health plan with vitamins, supplements, and more that help<br> you feel your best
                 today and support you long-term.</p>
-            <a class="button button__big button_purple">Take the quiz</a>
+            <a href="quiz.html" class="button button__big button_purple">Take the quiz</a>
         </section>
 
         <section class="choose-prod">
@@ -127,8 +129,8 @@
             <h1 class="yourself__title">Ready to get started?</h1>
             <p>We'll help you create a health plan with vitamins, supplements, and more that help you feel your<br> best
                 today and support you long-term.</p>
-            <a class="button button__big button_purple">Take the quiz</a>
-            <a class="button-link button-link_orange">Go to the shop ></a>
+            <a href="quiz.html" class="button button__big button_purple">Take the quiz</a>
+            <a href="cataloge.html" class="button-link button-link_orange">Go to the shop ></a>
         </section>
 
     </main>

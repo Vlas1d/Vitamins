@@ -5,6 +5,7 @@
 @import "modules/buttons";
 @import "modules/decor";
 @import "modules/customers-reviews";
+@import "modules/goods-card";
 
 @import "../../node_modules/swiper/swiper-bundle.min.css";
 
@@ -81,7 +82,11 @@ h2 {
     line-height: 60px;
 }
 h3 {
-    
+    font-family: 'Effra';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
 }
 h4 {
     

@@ -35,6 +35,10 @@
   margin-left: 37px;
 }
 
+.header__end.hide {
+  display: none;
+}
+
 .header__hide-menu {
   display: none;
 }
@@ -226,6 +230,11 @@
   height: 22px;
 }
 
+.svg-vitamins-icon {
+  width: 50px;
+  height: 60px;
+}
+
 .button {
   font-family: "Effra";
   font-style: normal;
@@ -388,6 +397,65 @@
   line-height: 22px;
 }
 
+.goods-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 32px;
+}
+
+.goods-list__card {
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.47);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.47);
+}
+
+.goods-card {
+  max-width: 325px;
+  min-width: 250px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  height: 479px;
+  padding: 62px 30px 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FAF8F6;
+  border-radius: 16px;
+}
+
+.goods-card picture {
+  margin: 0px auto 44px;
+}
+
+.goods-card__category {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #6B5EBB;
+  margin-bottom: 8px;
+}
+
+.goods-card__name {
+  font-family: "Effra";
+  font-weight: 400;
+}
+
+.goods-card__price {
+  font-weight: 700;
+  line-height: 27px;
+  margin-top: auto;
+}
+
 *,
 *::after,
 *::before {
@@ -474,6 +542,14 @@ h2 {
   line-height: 60px;
 }
 
+h3 {
+  font-family: "Effra";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+}
+
 h5 {
   font-family: "Effra";
   font-style: normal;
@@ -501,6 +577,23 @@ button {
   padding-left: 15px !important;
   padding-right: 15px !important;
   margin: 0 auto;
+}
+
+@media (max-width: 920px) {
+  .header {
+    padding: 0px;
+    height: 70px;
+    background: rgb(251, 251, 251);
+    border-bottom: 1px solid rgb(238, 238, 238);
+  }
+
+  .header__logo {
+    margin: 0px auto;
+  }
+
+  .header__end {
+    display: none;
+  }
 }
 
 @media (max-width: 700px) {
