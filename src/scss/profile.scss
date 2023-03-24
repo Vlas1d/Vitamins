@@ -1,0 +1,45 @@
+.profile {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 160px 0px 80px;
+
+    &__menu {
+        max-width: 220px;
+        width: 100%;
+        padding: 10px 0px;
+
+        font-family: 'Effra';
+        font-weight: 500;
+        font-size: 22px;
+
+        ul {
+            li:not(:last-child) {
+                margin-bottom: 38px;
+            }
+            li:hover {
+                color: #D32D2C;
+            }
+        }
+
+    }
+    &__content {
+
+        display: flex;
+        flex-direction: column;
+        padding-right: 3px;
+
+        & > * {
+            margin-left: auto;
+            margin-bottom: 11px;
+        }
+        h3 {
+            font-size: 36px;
+            line-height: 43px;
+            margin-left: 0;
+
+            margin-bottom: 41px;
+        }
+
+    }
+}

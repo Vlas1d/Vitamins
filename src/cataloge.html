@@ -7,13 +7,15 @@
 
 <body>
     @@include('html/header.html', {
-    "logo":"logo.svg"
+    "logo":"logo.svg",
+    "endVisible":""
     })
     <main>
         <section class="cataloge-slider swiper">
             <div class="cataloge-slider__control">
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
 
             <div class="swiper-wrapper">
@@ -55,7 +57,12 @@
 
         <section class="cataloge-content container">
             <div class="cataloge-content__menu">
-
+                <div class="cataloge-menu list" id="cataloge-menu">
+                    <label class="cataloge-menu__value list__value">All categories</label>
+                    <img class="svg-arrow-bottom-m" src="@img/icons/arrow1.svg" style="transform: rotate(90deg);"
+                        alt="arrow-bottom">
+                    <div class="cataloge-menu__items list__items"></div>
+                </div>
             </div>
             <div class="cataloge-content__goods goods-list">
                 @@include('html/goods-card.html', {})
@@ -81,6 +88,11 @@
                 @@include('html/goods-card.html', {})
                 @@include('html/goods-card.html', {})
                 @@include('html/goods-card.html', {})
+                <button class="goods-list__next-goods">
+                    <span>View more</span>
+                    <img class="svg-arrow-bottom-m" src="@img/icons/arrow1.svg" style="transform: rotate(90deg);"
+                        alt="arrow-bottom">
+                </button>
             </div>
         </section>
 

@@ -7,7 +7,8 @@
 
 <body>
     @@include('html/header.html', {
-    "logo":"logo-white.svg"
+    "logo":"logo-white.svg",
+    "endVisible":""
     })
     <main>
         <section class="product">
@@ -15,9 +16,10 @@
                 <img src="@img/cataloge/product.png" alt="vitamins">
             </div>
             <div class="product__content content-prod container">
-                <div class="content-prod__slider 4swiper">
-                    <div class="4swiper-wrapper">
-                        <div class="content-prod__slide 4swiper-slide">
+                <div class="content-prod__slider swiper">
+                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-wrapper">
+                        <div class="content-prod__slide swiper-slide">
                             <div class="content-prod__title">
                                 <a href="#">Vitamins & Dietary Supplements</a>
                                 <h3>Metagenics - 500-C Methoxyflavone</h3>
@@ -40,11 +42,13 @@
                                 <div class="add-prod__autoship">
                                     <p>Autoship this item every</p>
                                     <span class="add-prod__list">
-
+                                        <span>30</span>
+                                        <img class="svg-arrow-bottom-m" src="@img/icons/arrow1.svg"
+                                            style="transform: rotate(90deg);" alt="arrow-bottom">
                                     </span>
                                     <p>days</p>
                                     <div class="add-prod__switch">
-
+                                        <div></div>
                                     </div>
                                 </div>
                                 <div class="add-prod__add">
@@ -57,12 +61,27 @@
                                 <p>500-C Methoxyflavone is a synergistic formula that features a specialized complex of
                                     bioflavonoids combined with vitamin C.*</p>
                                 <ul class="descript-prod__list">
-                                    <li>Citrus bioflavonoid complex</li>
-                                    <li>Provides potent antioxidant protection and supports healthy immune system
-                                        function*</li>
-                                    <li>Supports healthy collagen production, the main component of connective tissue*
+                                    <li>
+                                        <img class="svg-list-marker" src="@img/icons/list-marker.svg"
+                                            alt="arrow-bottom">
+                                        Citrus bioflavonoid complex
                                     </li>
-                                    <li>This product is non-GMO, gluten free, and vegetarian</li>
+                                    <li>
+                                        <img class="svg-list-marker" src="@img/icons/list-marker.svg"
+                                            alt="arrow-bottom">
+                                        Provides potent antioxidant protection and supports healthy immune system
+                                        function*
+                                    </li>
+                                    <li>
+                                        <img class="svg-list-marker" src="@img/icons/list-marker.svg"
+                                            alt="arrow-bottom">
+                                        Supports healthy collagen production, the main component of connective tissue*
+                                    </li>
+                                    <li>
+                                        <img class="svg-list-marker" src="@img/icons/list-marker.svg"
+                                            alt="arrow-bottom">
+                                        This product is non-GMO, gluten free, and vegetarian
+                                    </li>
                                 </ul>
                             </div>
                             <div class="content-prod__info">
@@ -102,6 +121,16 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="personal-pack container">
+            <h5>You may also like</h5>
+            <div class="personal-pack__goods">
+                @@include('html/goods-card.html', {})
+                @@include('html/goods-card.html', {})
+                @@include('html/goods-card.html', {})
+                @@include('html/goods-card.html', {})
             </div>
         </section>
 

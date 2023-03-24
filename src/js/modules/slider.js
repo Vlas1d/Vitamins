@@ -7,7 +7,14 @@ export function sliders() {
             modules: [Navigation, Pagination],
             loop: true,
             slidesPerView: "auto",
-            spaceBetween: 33,
+            breakpoints: {
+                1100: {
+                    spaceBetween: 33,
+                },
+                320: {
+                    spaceBetween: 10,
+                }
+            },
         });
     }
 
@@ -28,10 +35,28 @@ export function sliders() {
             slidesPerView: "auto",
             spaceBetween: 50,
 
+            pagination: {
+                el: ".swiper-pagination",
+            },
+
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+        });
+    }
+
+    if (document.querySelector('.content-prod__slider') != null && window.innerWidth > 1200) {
+        const productionInfoSwiper = new Swiper('.content-prod__slider', {
+            modules: [Navigation, Pagination, Scrollbar, Mousewheel, FreeMode],
+            direction: "vertical",
+            freeMode: true,
+            mousewheel: true,
+            slidesPerView: "auto",
+            scrollbar: {
+                el: ".swiper-scrollbar",
+            },
+
         });
     }
 }

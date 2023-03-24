@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title":"Profile",
+"thisStyle":"css/profile.min.css"
+})
+
+<body>
+    @@include('html/header.html', {
+    "logo":"logo.svg",
+    "endVisible":""
+    })
+    <main>
+        <section class="profile container">
+            <div class="profile__menu">
+                <ul>
+                    <li>Subscriptions</li>
+                    <li>Orders</li>
+                    <li>Account Overview</li>
+                    <li>Payment methods</li>
+                    <li>Change Password</li>
+                    <li>Sign out</li>
+                </ul>
+            </div>
+            <div class="profile__content prof-window">
+                <h3>Subscriptions</h3>
+                <img src="@img/profile/subscriptions.jpg" alt="goods">
+                <img src="@img/profile/subscriptions.jpg" alt="goods">
+                <img src="@img/profile/subscriptions.jpg" alt="goods">
+            </div>
+        </section>
+    </main>
+    @@include('html/footer.html', {})
+</body>
+
+</html>

@@ -8,31 +8,90 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap&_v=20230310160915" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap&_v=20230324214418" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.min.css?_v=20230310160915">
-    <link rel="stylesheet" href="css/cataloge.min.css?_v=20230310160915">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230324214418">
+    <link rel="stylesheet" href="css/cataloge.min.css?_v=20230324214418">
     <title>Cataloge</title>
 </head>
 
 <body>
     <header class="header">
     <div class="header__view">
+        <div class="header__burger">
+            <span></span>
+        </div>
         <a class="header__logo" href="index.html">
             <img class="svg-logo" src="img/icons/logo.svg" alt="logo">
         </a>
-        <div class="header__end @@endVisible">
-            <a href="index.html">
+        <div class="header__end ">
+            <a href="registration.html">
                 <img class="svg-person" src="img/icons/person.svg" alt="profile">
             </a>
-            <a>
+            <button class="header__shopping-card">
                 <img class="svg-bag" src="img/icons/bag.svg" alt="shopping-card">
-            </a>
+            </button>
             <a href="quiz.html" class="button button__small button_orange">Take the quiz</a>
         </div>
     </div>
-    <div class="header__hide-menu">
 
+    <div class="header__menu menu">
+        <div class="menu__head">
+            <button class="menu__close" aria-label="close"><span></span></button>
+            <img class="svg-person" src="img/icons/person.svg" alt="profile">
+        </div>
+        <ul>
+            <li class="menu__shop-button">Shop<img class="svg-arrow" src="img/icons/arrow1.svg" alt="arrow"></li>
+            <li class="menu__info-button">Information<img class="svg-arrow" src="img/icons/arrow1.svg" alt="arrow">
+            </li>
+        </ul>
+        <a href="quiz.html">Take a quiz</a>
+        <div class="menu__info">
+            <a href="email:support@medstogo.com">support@medstogo.com</a><br>
+            <span>© 2020 Vitamins.com / All rights reserved</span>
+        </div>
+    </div>
+
+    <div class="menu menu-shop">
+        <div class="menu__head">
+            <img class="svg-arrow" src="img/icons/arrow1.svg" alt="arrow">
+            Shop
+        </div>
+        <ul>
+            <li><a href="cataloge.html">All categories</a></li>
+            <li><a href="cataloge.html">Vitamins & Dietary Supplements</a></li>
+            <li><a href="cataloge.html">Weight Loss</a></li>
+            <li><a href="cataloge.html">Minerals</a></li>
+            <li><a href="cataloge.html">Antioxidants</a></li>
+            <li><a href="cataloge.html">Probiotics</a></li>
+            <li><a href="cataloge.html">Pain Relief</a></li>
+            <li><a href="cataloge.html">Prenatal Vitamins</a></li>
+            <li><a href="cataloge.html">Sale%</a></li>
+        </ul>
+    </div>
+    <div class="menu menu-info">
+        <div class="menu__head">
+            <img class="svg-arrow" src="img/icons/arrow1.svg" alt="arrow">
+            Information
+        </div>
+        <ul>
+            <li>Subscription Cycle & Billing</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Shipping & Delivery</li>
+            <li>Return Policy</li>
+        </ul>
+    </div>
+
+    <div class="shop-card">
+        <div class="shop-card__head">
+            Cart
+            <button class="shop-card__close" aria-label="close"><span></span></button>
+        </div>
+        <picture><source srcset="img/cataloge/goods.webp" type="image/webp"><img src="img/cataloge/goods.jpg" alt="goods"></picture>
+        <picture><source srcset="img/cataloge/goods1.webp" type="image/webp"><img src="img/cataloge/goods1.jpg" alt="goods"></picture>
+
+        <a href="checkout.html" class="button button__big button_orange">Check Out • $156.58</a>
     </div>
 </header>
     <main>
@@ -40,6 +99,7 @@
             <div class="cataloge-slider__control">
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
 
             <div class="swiper-wrapper">
@@ -81,11 +141,16 @@
 
         <section class="cataloge-content container">
             <div class="cataloge-content__menu">
-
+                <div class="cataloge-menu list" id="cataloge-menu">
+                    <label class="cataloge-menu__value list__value">All categories</label>
+                    <img class="svg-arrow-bottom-m" src="img/icons/arrow1.svg" style="transform: rotate(90deg);"
+                        alt="arrow-bottom">
+                    <div class="cataloge-menu__items list__items"></div>
+                </div>
             </div>
             <div class="cataloge-content__goods goods-list">
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -93,7 +158,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -101,7 +166,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -109,7 +174,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -117,7 +182,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -125,7 +190,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -133,7 +198,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -141,7 +206,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -149,7 +214,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -157,7 +222,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -165,7 +230,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -173,7 +238,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -181,7 +246,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -189,7 +254,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -197,7 +262,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -205,7 +270,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -213,7 +278,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -221,7 +286,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -229,7 +294,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -237,7 +302,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -245,7 +310,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -253,7 +318,7 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
@@ -261,13 +326,18 @@
     <p class="goods-card__price">$61.98</p>
 </div>
                 <div class="goods-list__card goods-card">
-    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" width="189px" height="211px" alt="vitamins"></picture>
+    <picture><source srcset="img/cataloge/goods-card.webp" type="image/webp"><img loading="lazy" src="img/cataloge/goods-card.png" alt="vitamins"></picture>
     <a class="goods-card__category">Vitamins & Dietary Supplements</a>
     <a href="product.html" class="goods-card__name">
         <p>Ortho B Complex</p>
     </a>
     <p class="goods-card__price">$61.98</p>
 </div>
+                <button class="goods-list__next-goods">
+                    <span>View more</span>
+                    <img class="svg-arrow-bottom-m" src="img/icons/arrow1.svg" style="transform: rotate(90deg);"
+                        alt="arrow-bottom">
+                </button>
             </div>
         </section>
 
@@ -364,8 +434,8 @@
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230310160915"></script>
-    <script src="js/script.min.js?_v=20230310160915"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230324214418"></script>
+    <script src="js/script.min.js?_v=20230324214418"></script>
 </footer>
 </body>
 

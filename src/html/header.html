@@ -1,19 +1,78 @@
 <header class="header">
     <div class="header__view">
+        <div class="header__burger">
+            <span></span>
+        </div>
         <a class="header__logo" href="index.html">
             <img class="svg-logo" src="@img/icons/@@logo" alt="logo">
         </a>
         <div class="header__end @@endVisible">
-            <a href="index.html">
+            <a href="registration.html">
                 <img class="svg-person" src="@img/icons/person.svg" alt="profile">
             </a>
-            <a>
+            <button class="header__shopping-card">
                 <img class="svg-bag" src="@img/icons/bag.svg" alt="shopping-card">
-            </a>
+            </button>
             <a href="quiz.html" class="button button__small button_orange">Take the quiz</a>
         </div>
     </div>
-    <div class="header__hide-menu">
 
+    <div class="header__menu menu">
+        <div class="menu__head">
+            <button class="menu__close" aria-label="close"><span></span></button>
+            <img class="svg-person" src="@img/icons/person.svg" alt="profile">
+        </div>
+        <ul>
+            <li class="menu__shop-button">Shop<img class="svg-arrow" src="@img/icons/arrow1.svg" alt="arrow"></li>
+            <li class="menu__info-button">Information<img class="svg-arrow" src="@img/icons/arrow1.svg" alt="arrow">
+            </li>
+        </ul>
+        <a href="quiz.html">Take a quiz</a>
+        <div class="menu__info">
+            <a href="email:support@medstogo.com">support@medstogo.com</a><br>
+            <span>© 2020 Vitamins.com / All rights reserved</span>
+        </div>
+    </div>
+
+    <div class="menu menu-shop">
+        <div class="menu__head">
+            <img class="svg-arrow" src="@img/icons/arrow1.svg" alt="arrow">
+            Shop
+        </div>
+        <ul>
+            <li><a href="cataloge.html">All categories</a></li>
+            <li><a href="cataloge.html">Vitamins & Dietary Supplements</a></li>
+            <li><a href="cataloge.html">Weight Loss</a></li>
+            <li><a href="cataloge.html">Minerals</a></li>
+            <li><a href="cataloge.html">Antioxidants</a></li>
+            <li><a href="cataloge.html">Probiotics</a></li>
+            <li><a href="cataloge.html">Pain Relief</a></li>
+            <li><a href="cataloge.html">Prenatal Vitamins</a></li>
+            <li><a href="cataloge.html">Sale%</a></li>
+        </ul>
+    </div>
+    <div class="menu menu-info">
+        <div class="menu__head">
+            <img class="svg-arrow" src="@img/icons/arrow1.svg" alt="arrow">
+            Information
+        </div>
+        <ul>
+            <li>Subscription Cycle & Billing</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Shipping & Delivery</li>
+            <li>Return Policy</li>
+        </ul>
+    </div>
+
+    <div class="shop-card">
+        <div class="shop-card__head">
+            Cart
+            <button class="shop-card__close" aria-label="close"><span></span></button>
+        </div>
+        <img src="@img/cataloge/goods.jpg" alt="goods">
+        <img src="@img/cataloge/goods1.jpg" alt="goods">
+
+        <a href="checkout.html" class="button button__big button_orange">Check Out • $156.58</a>
     </div>
 </header>

@@ -3,6 +3,7 @@
 @import "modules/fonts";
 @import "modules/icons";
 @import "modules/buttons";
+@import "modules/list";
 @import "modules/decor";
 @import "modules/customers-reviews";
 @import "modules/goods-card";
@@ -45,13 +46,18 @@ html, body {
     line-height: 163%;
     color: #000;
     background: #FFF;
-}
-main {
-    min-height: calc(100vh - 350px);
+
+    @media (max-width: 500px) {
+        font-size: 14px;
+    }
 }
 p {
     font-size: 20px;
     line-height: 163.42%; 
+
+    @media (max-width: 500px) {
+        font-size: 14px;
+    }
 }
 main {
     position: relative;
@@ -69,8 +75,12 @@ h1 {
     font-size: 56px;
     line-height: 68px;
 
-    @media (max-width: 700px) {
+    @media (max-width: 500px) {
         font-size: 24px;
+        line-height: 29px;
+    }
+    @media (max-width: 1100px) {
+        font-size: 40px;
         line-height: 29px;
     }
 }
@@ -80,6 +90,11 @@ h2 {
     font-weight: 500;
     font-size: 50px;
     line-height: 60px;
+
+    @media (max-width: 1100px) {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 h3 {
     font-family: 'Effra';
@@ -87,6 +102,11 @@ h3 {
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
+
+    @media (max-width: 1200px) {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 h4 {
     
@@ -97,6 +117,15 @@ h5 {
     font-weight: 500;
     font-size: 30px;
     line-height: 36px;
+
+    @media (max-width: 500px) {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    @media (max-width: 1200px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 h6 {
     font-family: 'Effra';
@@ -104,6 +133,11 @@ h6 {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
+
+    @media (max-width: 500px) {
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 
 button {
@@ -118,4 +152,36 @@ button {
     padding-left: 15px !important;
     padding-right: 15px !important;
     margin: 0 auto;
+
+    @media (max-width: 500px) {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+}
+
+//-----OTHER-----------------------------------------------
+
+.personal-pack {
+    padding: 100px 0px;
+
+    @media (max-width: 1200px) {
+        padding: 81px 0px 35px;
+
+        h5 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+    
+    &__goods {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        @media (max-width: 1200px) {
+            justify-content: center;
+            gap: 20px;
+        }
+    }
 }

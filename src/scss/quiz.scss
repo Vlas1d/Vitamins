@@ -5,6 +5,17 @@
 
     display: flex;
 
+    &__radio.show {
+        display: block !important;
+    }
+    &__text.hide {
+        display: none !important;
+    }
+
+    @media (max-width: 1100px) {
+        flex-direction: column;
+    }
+
     & > *:not(.quiz__quest-num) {
         width: 50%;
         height: 100%;
@@ -12,6 +23,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media (max-width: 1100px) {
+            width: 100%;
+        }
     }
 
     &__title {
@@ -37,6 +52,19 @@
         }
         color: #fff;
         background: #8172DD;
+
+        @media (max-width: 1100px) {
+            color: #000;
+            background: #fff;
+
+            h1 {
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+
+                margin-top: 156px;
+            }
+        }
     }
 
     div:has(input#name) {
@@ -61,6 +89,12 @@
         &:active {
             background: #d65c30;
         }
+
+        @media (max-width: 1100px) {
+            width: 32px;
+            height: 32px;
+            background: #ddd;
+        }
     }
 
     &__quest-num {
@@ -77,13 +111,57 @@
 
     background: #FAF8F6;
 
+    @media (max-width: 1100px) {
+        display: flex;
+        align-items: flex-start !important;
+    }
+
     &__container {
         max-width: 496px;
         width: 100%;
 
+        @media (max-width: 1100px) {
+            display: flex;
+
+            & > div {
+                width: 90%;
+                margin: 0px auto 0px;
+                display: flex;
+            }
+        }
+
         input:focus {
             outline-color:#8172DD;
             //background: #000 !important;
+        }
+        input[type=radio] {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+        label {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+
+            display: flex;
+            align-items: center;
+            padding: 40px;
+
+            width: 100%;
+            height: 105px;
+
+            background: #fff;
+            border-radius: 16px;
+
+            &:hover {
+                border: 2px solid #8172DD;
+            }
+        }
+        div:has(label) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
         input#name {
@@ -98,6 +176,10 @@
 
             background: #fff;
 
+            @media (max-width: 1100px) {
+                height: 56px;
+            }
+
             &::placeholder {
                 font-weight: 600;
                 font-size: 18px;
@@ -105,4 +187,11 @@
             }
         }
     }
+}
+
+.quiz__text {
+    //display: none !important;
+}
+.quiz__radio {
+    display: none !important;
 }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"Autorization",
+"thisStyle":"css/registration.min.css"
+})
+
+<body>
+    @@include('html/header-min.html', {
+    "logo":"logo.svg",
+    "endVisible":"hide"
+    })
+    <main>
+        <section class="reg aut container">
+            <div class="reg__form">
+                <h6>Sign in with email</h6>
+                <p>Please enter your e-mail and password:</p>
+                <form>
+                    <input type="email" name="email" placeholder="Email">
+                    <div class="aut__pass">
+                        <input type="password" name="password" placeholder="Password">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <a href="profile.html" class="button button__middle button_orange">Sign in</a>
+                </form>
+            </div>
+            <div class="reg__social">
+                <p>or sign in with...</p>
+                <div>
+                    <a class="reg__social-item">
+                        <img class="svg-google" src="@img/icons/google.svg" alt="google">
+                        Google
+                    </a>
+                    <a class="reg__social-item">
+                        <img class="svg-apple" src="@img/icons/apple.svg" alt="apple">
+                        Apple
+                    </a>
+                    <a class="reg__social-item">
+                        <img class="svg-facebook" src="@img/icons/facebook1.svg" alt="facebook">
+                        Facebook
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="reg-dh container">
+            <span>Don't have an account? </span><a href="#"> Create one</a>
+        </section>
+    </main>
+    @@include('html/footer-min.html', {})
+</body>
+
+</html>

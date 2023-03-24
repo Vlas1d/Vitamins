@@ -17,3 +17,24 @@
 .svg-social { width: 22px; height: 22px; }
 
 .svg-vitamins-icon { width: 50px; height: 60px; }
+.svg-list-marker { width: 30px; height: 2px; }
+
+.svg-google { width: 22px; height: 22px; }
+.svg-apple { width: 20px; height: 24px; }
+.svg-facebook { width: 24px; height: 24px; }
+
+@media (max-width: 920px) {
+    .svg-logo { width: 33.6px; height: 40px; }
+    .svg-logo-big { width: 42px; height: 50px; }
+
+    .svg-healthy1 { width: 46.5px; height: 38px; }
+    .svg-healthy2 { width: 39px; height: 43.5px; }
+    .svg-healthy3 { width: 38px; height: 48px; }
+
+    .svg-hands { width: 50px; height: 50px; }
+    .svg-hands-heart { width: 50px; height: 46px; }
+
+    .svg-dialoge { width: 50px; height: 57px; }
+
+    .svg-list-marker { width: 20px; height: 2px; }
+}

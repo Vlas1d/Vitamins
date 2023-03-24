@@ -7,6 +7,14 @@
   display: flex;
 }
 
+.quiz__radio.show {
+  display: block !important;
+}
+
+.quiz__text.hide {
+  display: none !important;
+}
+
 .quiz > *:not(.quiz__quest-num) {
   width: 50%;
   height: 100%;
@@ -102,6 +110,44 @@
   outline-color: #8172DD;
 }
 
+.input-quiz__container input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.input-quiz__container label {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+  width: 100%;
+  height: 105px;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.input-quiz__container label:hover {
+  border: 2px solid #8172DD;
+}
+
+.input-quiz__container div:has(label) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
 .input-quiz__container input#name {
   width: 100%;
   height: 105px;
@@ -141,4 +187,66 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
+}
+
+.quiz__radio {
+  display: none !important;
+}
+
+@media (max-width: 1100px) {
+  .quiz {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .quiz > *:not(.quiz__quest-num) {
+    width: 100%;
+  }
+
+  .quiz__title {
+    color: #000;
+    background: #fff;
+  }
+
+  .quiz__title h1 {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-top: 156px;
+  }
+
+  .quiz__button-next {
+    width: 32px;
+    height: 32px;
+    background: #ddd;
+  }
+
+  .input-quiz {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+
+  .input-quiz__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .input-quiz__container > div {
+    width: 90%;
+    margin: 0px auto 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .input-quiz__container input#name {
+    height: 56px;
+  }
 }
